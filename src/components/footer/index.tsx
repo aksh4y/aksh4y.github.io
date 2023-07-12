@@ -1,10 +1,10 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { RootState } from '../../store/myTypes';
-import { Container, Row, Col } from 'react-bootstrap';
-import Socials from './socials';
 import Portfolio from '../../types/portfolio';
+import Socials from './socials';
 import './style.scss';
 
 const defaultFooterBg = 'https://akshaysadarangani.com/images/cover2.jpg';

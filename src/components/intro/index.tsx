@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { RootState } from '../../store/myTypes';
@@ -7,11 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Typed from 'react-typed';
 import { smoothScroll } from '../../utilities';
-import './stars.scss';
-import './style.scss';
 import { ParticlesFC } from './Particles';
-import { tsParticles } from 'tsparticles-engine';
-import { loadPolygonPath } from 'tsparticles-path-polygon';
+import './style.scss';
 
 interface IntroProps {
     headline?: string;
