@@ -1,0 +1,83 @@
+@import '../../variables';
+
+.title-box {
+    margin: 0 auto 3rem auto;
+}
+
+.extra-padded {
+    padding: 0 50px;
+}
+
+.title-a {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle-a {
+    color: $color-color;
+}
+
+.subtitle-b {
+    color: $color-color;
+    a {
+        color: $secondary;
+        text-decoration: underline;
+    }
+}
+
+.sources {
+    margin-top: 10px;
+    word-spacing: 10px;
+}
+
+blockquote {
+    border-left: solid 0.5em #e5e6e7;
+    padding: 1em 0 1em 2em;
+    font-style: italic;
+    line-height: 1.75em;
+    color: #39454b;
+    letter-spacing: 0.025em;
+    ul {
+        list-style-type: none;
+    }
+}
+
+#podcast {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80)
+            no-repeat center center fixed;
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+}
+
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: $primary;
+    margin: 0 auto;
+}
+
+/* Title Left */
+
+.title-box-2 {
+    margin-bottom: 3rem;
+    .line-mf {
+        display: none;
+    }
+}
+
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+
+.title-left:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: $primary;
+    width: 100px;
+    bottom: -12px;
+}
