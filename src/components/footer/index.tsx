@@ -1,19 +1,19 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { compose } from 'redux'
-import { RootState } from '../../store/myTypes'
-import { Container, Row, Col } from 'react-bootstrap'
-import Socials from './socials'
-import Portfolio from '../../types/portfolio'
-import './style.scss'
+import React from 'react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+import { RootState } from '../../store/myTypes';
+import { Container, Row, Col } from 'react-bootstrap';
+import Socials from './socials';
+import Portfolio from '../../types/portfolio';
+import './style.scss';
 
-const defaultFooterBg = 'https://akshaysadarangani.com/images/cover2.jpg'
+const defaultFooterBg = 'https://akshaysadarangani.com/images/cover2.jpg';
 export const Footer: React.FC<Portfolio> = (props) => {
-    const footer = props.footer
+    const footer = props.footer;
     const imagePath = footer.background
         ? 'img/' + footer.background
-        : defaultFooterBg
-    const bgStyle = { backgroundImage: 'url(' + imagePath + ')' }
+        : defaultFooterBg;
+    const bgStyle = { backgroundImage: 'url(' + imagePath + ')' };
 
     return (
         <Container
@@ -37,11 +37,11 @@ export const Footer: React.FC<Portfolio> = (props) => {
                 </Container>
             </footer>
         </Container>
-    )
-}
+    );
+};
 
 const mapStateToProps = (state: RootState) => {
-    return state.portfolio
-}
+    return state.portfolio;
+};
 
-export default compose(connect(mapStateToProps))(Footer)
+export default compose(connect(mapStateToProps))(Footer);

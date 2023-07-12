@@ -1,9 +1,9 @@
-import React from 'react'
-import { useCallback, useMemo } from 'react'
-import Particles from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import { ISourceOptions } from 'tsparticles-engine'
-import { Engine } from 'tsparticles-engine/types/engine'
+import React from 'react';
+import { useCallback, useMemo } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import { ISourceOptions } from 'tsparticles-engine';
+import { Engine } from 'tsparticles-engine/types/engine';
 
 export const ParticlesFC = () => {
     const options: ISourceOptions = useMemo(() => {
@@ -67,12 +67,12 @@ export const ParticlesFC = () => {
                     },
                 },
             },
-        }
-    }, [])
+        };
+    }, []);
 
     const initParticles = useCallback(async (engine: Engine) => {
-        loadFull(engine)
-    }, [])
+        loadFull(engine);
+    }, []);
 
-    return <Particles init={initParticles} options={options} />
-}
+    return <Particles init={initParticles} options={options} />;
+};

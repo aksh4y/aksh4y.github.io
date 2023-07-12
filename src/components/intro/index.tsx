@@ -1,21 +1,21 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
-import { compose } from 'redux'
-import { RootState } from '../../store/myTypes'
-import { Container } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import Typed from 'react-typed'
-import { smoothScroll } from '../../utilities'
-import './stars.scss'
-import './style.scss'
-import { ParticlesFC } from './Particles'
-import { tsParticles } from 'tsparticles-engine'
-import { loadPolygonPath } from 'tsparticles-path-polygon'
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+import { RootState } from '../../store/myTypes';
+import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import Typed from 'react-typed';
+import { smoothScroll } from '../../utilities';
+import './stars.scss';
+import './style.scss';
+import { ParticlesFC } from './Particles';
+import { tsParticles } from 'tsparticles-engine';
+import { loadPolygonPath } from 'tsparticles-path-polygon';
 
 interface IntroProps {
-    headline?: string
-    typed?: string[]
+    headline?: string;
+    typed?: string[];
 }
 
 export const Intro: React.FC<IntroProps> = (props) => {
@@ -56,11 +56,11 @@ export const Intro: React.FC<IntroProps> = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const mapStateToProps = (state: RootState) => {
-    return state.portfolio.intro
-}
+    return state.portfolio.intro;
+};
 
-export default compose(connect(mapStateToProps))(Intro)
+export default compose(connect(mapStateToProps))(Intro);

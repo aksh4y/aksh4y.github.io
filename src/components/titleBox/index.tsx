@@ -1,22 +1,22 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import './style.scss';
 
 export interface TitleBoxProps {
-    box?: string
-    titleType?: string
-    headline?: string
-    subhead?: string
-    innerHtml?: string
-    previewLink?: string
-    sources?: string
-    description?: string
+    box?: string;
+    titleType?: string;
+    headline?: string;
+    subhead?: string;
+    innerHtml?: string;
+    previewLink?: string;
+    sources?: string;
+    description?: string;
 }
 
 const createHtml = (str: string) => {
-    return { __html: str }
-}
+    return { __html: str };
+};
 
-export const TitleBox: React.FC<TitleBoxProps> = props => (
+export const TitleBox: React.FC<TitleBoxProps> = (props) => (
     <div className={props.box || 'title-box'}>
         <h3 className={props.titleType || 'title-a'}>{props.headline}</h3>
         <p className="subtitle-a">{props.subhead}</p>
@@ -57,6 +57,6 @@ export const TitleBox: React.FC<TitleBoxProps> = props => (
         )}
         <div className="line-mf"></div>
     </div>
-)
+);
 
-export default TitleBox
+export default TitleBox;

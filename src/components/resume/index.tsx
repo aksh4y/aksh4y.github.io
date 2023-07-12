@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import { connect } from 'react-redux'
-import { compose } from 'redux'
-import { RootState } from '../../store/myTypes'
-import { Container, Row, Col, Badge } from 'react-bootstrap'
-import List from './list'
-import Intro from './intro'
-import Tool from '../../types/tool'
-import Job from '../../types/job'
-import styled from '@emotion/styled'
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+import { RootState } from '../../store/myTypes';
+import { Container, Row, Col, Badge } from 'react-bootstrap';
+import List from './list';
+import Intro from './intro';
+import Tool from '../../types/tool';
+import Job from '../../types/job';
+import styled from '@emotion/styled';
 
 export interface ResumeProps {
-    toolsHeadline: string
-    tools: Tool[]
-    jobsHeadline: string
-    jobs: Job[]
+    toolsHeadline: string;
+    tools: Tool[];
+    jobsHeadline: string;
+    jobs: Job[];
 }
 
 const Technologies = styled.div`
     padding-top: 75px;
     display: flex;
     flex-wrap: wrap;
-`
+`;
 
 const ResumeBadge = (
     <Badge
@@ -38,20 +38,20 @@ const ResumeBadge = (
     >
         <span style={{ color: 'white' }}>Download Resume</span>
     </Badge>
-)
+);
 
 export const Resume: React.FC<ResumeProps> = (props: any) => {
-    const [width, setWidth] = useState<number>(window.innerWidth)
+    const [width, setWidth] = useState<number>(window.innerWidth);
     const handleWindowSizeChange = () => {
-        setWidth(window.innerWidth)
-    }
+        setWidth(window.innerWidth);
+    };
     useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange)
+        window.addEventListener('resize', handleWindowSizeChange);
         return () => {
-            window.removeEventListener('resize', handleWindowSizeChange)
-        }
-    }, [])
-    const isMobile = width <= 768
+            window.removeEventListener('resize', handleWindowSizeChange);
+        };
+    }, []);
+    const isMobile = width <= 768;
 
     return (
         <Container className="section-wrapper">
@@ -191,11 +191,11 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
                 </Col>
             </Row>
         </Container>
-    )
-}
+    );
+};
 
 const mapStateToProps = (state: RootState) => {
-    return state.portfolio.resume
-}
+    return state.portfolio.resume;
+};
 
-export default compose(connect(mapStateToProps))(Resume)
+export default compose(connect(mapStateToProps))(Resume);

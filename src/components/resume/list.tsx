@@ -1,19 +1,19 @@
-import React from 'react'
-import TitleBox from '../titleBox'
-import Job from './job'
-import Tool from './tool'
-import JobModel from '../../types/job'
-import ToolModel from '../../types/tool'
+import React from 'react';
+import TitleBox from '../titleBox';
+import Job from './job';
+import Tool from './tool';
+import JobModel from '../../types/job';
+import ToolModel from '../../types/tool';
 
 export interface ListProps {
-    headline: string
-    list: (JobModel | ToolModel)[]
-    tag: string
+    headline: string;
+    list: (JobModel | ToolModel)[];
+    tag: string;
 }
 
-export const List: React.FC<ListProps> = props => {
-    const components: any = { job: Job, tool: Tool }
-    const TagName: any = components[props.tag || 'job']
+export const List: React.FC<ListProps> = (props) => {
+    const components: any = { job: Job, tool: Tool };
+    const TagName: any = components[props.tag || 'job'];
 
     return (
         <React.Fragment>
@@ -26,7 +26,7 @@ export const List: React.FC<ListProps> = props => {
                 <TagName {...item} key={i} />
             ))}
         </React.Fragment>
-    )
-}
+    );
+};
 
-export default List
+export default List;

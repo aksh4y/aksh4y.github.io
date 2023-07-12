@@ -1,10 +1,10 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card'
-import sampleImage from '../../img/sample.png'
-import Project from '../../types/project'
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import sampleImage from '../../img/sample.png';
+import Project from '../../types/project';
 
-export const ProjectCard: React.FC<Project> = props => {
-    const imagePath: string = props.image ? props.image : sampleImage
+export const ProjectCard: React.FC<Project> = (props) => {
+    const imagePath: string = props.image ? props.image : sampleImage;
 
     return (
         <Card className="shadow-sm no-border full-height">
@@ -30,7 +30,7 @@ export const ProjectCard: React.FC<Project> = props => {
                     ))}
             </Card.Body>
         </Card>
-    )
-}
+    );
+};
 
-export default ProjectCard
+export default ProjectCard;

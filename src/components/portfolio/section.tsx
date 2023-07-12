@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import Carousel, { Modal, ModalGateway } from 'react-images'
-import ProjectCard from './projectCard'
-import Project from '../../types/project'
-import Section from '../../types/section'
-import TitleBox from '../titleBox'
-import sampleImage from '../../img/sample.png'
+import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import ProjectCard from './projectCard';
+import Project from '../../types/project';
+import Section from '../../types/section';
+import TitleBox from '../titleBox';
+import sampleImage from '../../img/sample.png';
 
 export const ProjectSet: React.FC<Section> = (props) => {
-    const [modalIsOpen, setModal] = useState(false)
-    const [selectedId, setSelected] = useState(0)
+    const [modalIsOpen, setModal] = useState(false);
+    const [selectedId, setSelected] = useState(0);
 
     const toggleModal = (selectedId: number) => {
-        setModal(!modalIsOpen)
-        setSelected(selectedId)
-    }
+        setModal(!modalIsOpen);
+        setSelected(selectedId);
+    };
 
-    const images: object[] = []
+    const images: object[] = [];
     const makePath = (image: string) => {
-        return image ? image : sampleImage
-    }
+        return image ? image : sampleImage;
+    };
 
     return (
         <Container className="section-wrapper">
@@ -41,7 +41,7 @@ export const ProjectSet: React.FC<Section> = (props) => {
             <Row>
                 {props.projects &&
                     props.projects.map((project: Project, i: number) => {
-                        images.push({ source: makePath(project.image) })
+                        images.push({ source: makePath(project.image) });
 
                         return (
                             <Col
@@ -53,7 +53,7 @@ export const ProjectSet: React.FC<Section> = (props) => {
                             >
                                 <ProjectCard {...project} />
                             </Col>
-                        )
+                        );
                     })}
             </Row>
             <ModalGateway>
@@ -64,7 +64,7 @@ export const ProjectSet: React.FC<Section> = (props) => {
                 ) : null}
             </ModalGateway>
         </Container>
-    )
-}
+    );
+};
 
-export default ProjectSet
+export default ProjectSet;

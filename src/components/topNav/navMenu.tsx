@@ -1,9 +1,9 @@
-import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
-import Portfolio from '../../types/portfolio'
-import { smoothScroll } from '../../utilities'
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import Portfolio from '../../types/portfolio';
+import { smoothScroll } from '../../utilities';
 
-export const NavMenu: React.FC<Portfolio> = props => {
+export const NavMenu: React.FC<Portfolio> = (props) => {
     return (
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
@@ -20,7 +20,7 @@ export const NavMenu: React.FC<Portfolio> = props => {
                 >
                     {props.menu.about}
                 </Nav.Link>
-                {props.sections.map(section => (
+                {props.sections.map((section) => (
                     <Nav.Link
                         key={section.id}
                         href={'#' + section.id}
@@ -31,7 +31,7 @@ export const NavMenu: React.FC<Portfolio> = props => {
                 ))}
             </Nav>
         </Navbar.Collapse>
-    )
-}
+    );
+};
 
-export default NavMenu
+export default NavMenu;

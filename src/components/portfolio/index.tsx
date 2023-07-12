@@ -1,11 +1,11 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { compose } from 'redux'
-import { RootState } from '../../store/myTypes'
-import { Container } from 'react-bootstrap'
-import Section from './section'
-import SectionModel from '../../types/section'
-import './style.scss'
+import React from 'react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+import { RootState } from '../../store/myTypes';
+import { Container } from 'react-bootstrap';
+import Section from './section';
+import SectionModel from '../../types/section';
+import './style.scss';
 
 export const Portfolio: React.FC<{ sections: SectionModel[] }> = (props) => (
     <Container>
@@ -13,12 +13,12 @@ export const Portfolio: React.FC<{ sections: SectionModel[] }> = (props) => (
             <Section {...section} key={i} />
         ))}
     </Container>
-)
+);
 
 const mapStateToProps = (state: RootState) => {
     return {
         sections: state.portfolio.sections,
-    }
-}
+    };
+};
 
-export default compose(connect(mapStateToProps))(Portfolio)
+export default compose(connect(mapStateToProps))(Portfolio);

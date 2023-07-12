@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 export interface IntroProps {
-    headline?: string
-    summary?: []
+    headline?: string;
+    summary?: [];
 }
 
-export const Intro: React.FC<IntroProps> = props => (
+export const Intro: React.FC<IntroProps> = (props) => (
     <div className="pb-2 mb-5 pt-md-0">
         <p className="lead font-weight-normal">{props.headline}</p>
         {props.summary &&
@@ -14,9 +14,9 @@ export const Intro: React.FC<IntroProps> = props => (
                     <p className="lead" key={i}>
                         {content}
                     </p>
-                )
+                );
             })}
     </div>
-)
+);
 
-export default Intro
+export default Intro;
