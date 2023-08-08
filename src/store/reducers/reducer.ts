@@ -50,28 +50,28 @@ export const initState: Portfolio = {
                 timeframe: 'Current',
                 current: true,
                 summary:
-                    'Created a NoAuth integrations marketplace app for MongoDB from scratch in React with TypeScript and Java hosting 20+ configurable, filterable and searchable integrations at launch increasing discoverability by 100%. Added a new connectivity option to the MongoDB Atlas integration for Vercel to support data transfer over HTTPS using RESTful Data API to add to the value proposition of DBaaS. Worked closely with product, marketing, and analytics to engineer and launch multiple complex A/A, A/B and MAB test experiments in React/Java to make improvements to the Atlas funnel and integrate Atlas front-end with back-end analytics systems. Worked with the Charts product and analytics team to engineer an A/B test experiment showcasing a real-time and interactive yet dismissible Atlas Chart to promote awareness of the product leading to an intent lift of 89%. Elevate the core Atlas product by building new features and improving existing processes and driving them through the SDLC to completion, precisely and accurately, by making data-driven decisions',
+                    '<li>Created a NoAuth integrations marketplace app for MongoDB from scratch in React with TypeScript and Java hosting 20+ configurable, filterable and searchable integrations at launch increasing discoverability by 100%</li><li>Pioneered the development of a feature-rich NoAuth marketplace application for MongoDB integrations, utilizing React, TypeScript, and Java from the ground up. Hosting over 20 configurable, filterable, and searchable integrations, this visionary creation witnessed an awe-inspiring 100% increase in discoverability upon launch, revolutionizing the way users interacted with the platform</li><li>Forged a powerful collaboration with the Charts product and analytics teams to orchestrate a high-stakes A/B test experiment. The result? A real-time, interactive, and captivating Atlas Chart component that played a pivotal role in driving product awareness to unprecedented heights, boasting an extraordinary 138% increase in activation</li><li>Worked closely with product, marketing, and analytics to engineer and launch multiple complex A/A, A/B and MAB test experiments in React/Java to make improvements to the Atlas funnel and integrate Atlas front-end with back-end analytics systems</li><li>Elevate the core Atlas product by building new features and improving existing processes and driving them through the SDLC to completion, precisely and accurately, by making data-driven decisions</li>',
             },
             {
                 title: 'Software Engineer II',
                 company: 'Goldman Sachs',
                 timeframe: '2020 - 2021',
                 summary:
-                    'Conceptualized, proposed and led the development of a full stack web app using Node.js, React.js, Java and other in-house tools to automate fact card generation thereby saving the firm an estimated ~$1.5 million / year. Made design decisions and supervised the development work of 2 direct reportees for this React.js based app where the sales team can onboard business proposals to check for conflicts of interest. Was a buddy to 2 interns and Acclimation Mentor to a full-time analyst supporting their way into the firm',
+                    '<li>Conceptualized, proposed and led the development of a full stack web app using Node.js, React.js, Java and other in-house tools to automate fact card generation thereby saving the firm an estimated ~$1.5 million / year</li><li>Made design decisions and supervised the development work of 2 direct reportees for this React.js based app where the sales team can onboard business proposals to check for conflicts of interest</li><li>Was a buddy to 2 interns and Acclimation Mentor to a full-time analyst supporting their way into the firm</li>',
             },
             {
                 title: 'Software Engineer I',
                 company: 'Goldman Sachs',
                 timeframe: '2019 - 2020',
                 summary:
-                    'Interacted with users to design complex server-side code in Java to automate report generation saving 400+ days of work annually by onboarding 20+ reports over 6 months. Led the dev work and managed 4 support staff worldwide for handling daily / monthly posting of 1000+ ETFs and MFs to GSAM.com by retrieving, aggregating and implementing biz logic to financial data. Successfully switched report rendering for 1000+ onshore funds from a 3rd party vendor to an in-house tool with 100% result match saving the firm ~$700,000 / year',
+                    '<li>Interacted with users to design complex server-side code in Java to automate report generation saving 400+ days of work annually by onboarding 20+ reports over 6 months</li><li>Led the dev work and managed 4 support staff worldwide for handling daily / monthly posting of 1000+ ETFs and MFs to GSAM.com by retrieving, aggregating and implementing biz logic to financial data.</li><li>Successfully switched report rendering for 1000+ onshore funds from a 3rd party vendor to an in-house tool with 100% result match saving the firm ~$700,000 / year</li>',
             },
             {
                 title: 'Analyst and Web Developer',
                 company: 'VMware',
                 timeframe: '2014 - 2016',
                 summary:
-                    'Developed and supported MS SharePoint applications used company-wide by 20,000+ employees. Led the infrastructure upgrade of MS SharePoint from version 2013 to 2016 for 5 global teams',
+                    '<li>Developed and supported MS SharePoint applications used company-wide by 20,000+ employees</li><li>Led the infrastructure upgrade of MS SharePoint from version 2013 to 2016 for 5 global teams</li>',
             },
         ],
         toolsHeadline: 'Skills',
@@ -299,6 +299,12 @@ export const initState: Portfolio = {
                     ],
                 },
             ],
+        },
+        {
+            id: 'contact',
+            menu: 'Contact',
+            headline: 'Get In Touch',
+            subhead: 'How about leaving me a message?',
         },
     ],
     footer: {

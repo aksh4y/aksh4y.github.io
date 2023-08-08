@@ -9,6 +9,10 @@ export interface JobProps {
     current?: boolean;
 }
 
+const createMarkup = (content: string) => {
+    return { __html: content };
+};
+
 export const Job: React.FC<JobProps> = (props) => {
     const variant = props.current ? 'success' : 'dark';
     const badgeStyle = props.current ? 'bg-success' : 'bg-medium';
@@ -21,7 +25,10 @@ export const Job: React.FC<JobProps> = (props) => {
                 {props.title} -{' '}
                 <span className="font-weight-normal">{props.company}</span>
             </h5>
-            <p className="font-weight-light">{props.summary}</p>
+            <p
+                className="font-weight-light"
+                dangerouslySetInnerHTML={createMarkup(props.summary)}
+            />
         </React.Fragment>
     );
 };

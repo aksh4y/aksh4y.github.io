@@ -6,6 +6,7 @@ import Project from '../../types/project';
 import Section from '../../types/section';
 import TitleBox from '../titleBox';
 import sampleImage from '../../img/sample.png';
+import { Contact } from '../contact';
 
 export const ProjectSet: React.FC<Section> = (props) => {
     const [modalIsOpen, setModal] = useState(false);
@@ -32,7 +33,7 @@ export const ProjectSet: React.FC<Section> = (props) => {
                     sources={props.sources}
                     description={props.description}
                     box={
-                        props.headline === 'Podcast'
+                        props.id === 'podcast'
                             ? 'title-box extra-padded'
                             : undefined
                     }
@@ -56,6 +57,7 @@ export const ProjectSet: React.FC<Section> = (props) => {
                         );
                     })}
             </Row>
+            {props.id === 'contact' && <Contact />}
             <ModalGateway>
                 {modalIsOpen ? (
                     <Modal onClose={toggleModal}>

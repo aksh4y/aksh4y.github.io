@@ -8,7 +8,9 @@ import Intro from './intro';
 import Tool from '../../types/tool';
 import Job from '../../types/job';
 import styled from '@emotion/styled';
-
+import Lottie from 'lottie-react';
+import engineer from './../../asset/engineer.json';
+import resumeGlimpse from './../../asset/resume_glimpse.json';
 export interface ResumeProps {
     toolsHeadline: string;
     tools: Tool[];
@@ -28,15 +30,17 @@ const ResumeBadge = (
         bg="#dccd14"
         style={{
             background: '#dccd14',
-            margin: '15px 0',
+            margin: '15px auto',
             padding: '10px',
             cursor: 'pointer',
+            display: 'block',
+            width: '200px',
         }}
         onClick={() =>
             window.open('https://akshaysadarangani.com/Resume.pdf', '_blank')
         }
     >
-        <span style={{ color: 'white' }}>Download Resume</span>
+        <span style={{ color: 'white' }}>Download My Resume</span>
     </Badge>
 );
 
@@ -59,18 +63,10 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
                 <Col className="shadow-sm p-5 resume-bg">
                     <Row>
                         <Col md={6}>
+                            <Lottie animationData={engineer} />
                             <Intro {...props} />
-                            {!!!isMobile && (
-                                <div>
-                                    {ResumeBadge}
-                                    <object
-                                        data="https://akshaysadarangani.com/Resume.pdf"
-                                        type="application/pdf"
-                                        width="100%"
-                                        height="750px"
-                                    ></object>
-                                </div>
-                            )}
+                            {!!!isMobile && <div>{ResumeBadge}</div>}
+                            <Lottie animationData={resumeGlimpse} />
                         </Col>
                         <Col md={6}>
                             <List

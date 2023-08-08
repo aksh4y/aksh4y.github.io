@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import 'react-app-polyfill/ie11';
@@ -46,6 +46,13 @@ export const App = () => {
         </Provider>
     );
 };
-const container = document.getElementById('root') as Element;
-const root = createRoot(container);
-root.render(<App />);
+
+let container: Element | null = null;
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (!container) {
+        container = document.getElementById('root') as HTMLElement;
+        const root = createRoot(container);
+        root.render(<App />);
+    }
+});

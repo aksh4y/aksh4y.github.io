@@ -1,5 +1,8 @@
 import React from 'react';
 import './style.scss';
+import Lottie from 'lottie-react';
+import blog from './../../asset/blog.json';
+import { Col, Row } from 'react-bootstrap';
 
 export interface TitleBoxProps {
     box?: string;
@@ -49,12 +52,27 @@ export const TitleBox: React.FC<TitleBoxProps> = (props) => (
                 dangerouslySetInnerHTML={createHtml(props.sources)}
             />
         )}
-        {props.description && (
-            <blockquote
-                className="subtitle-b"
-                dangerouslySetInnerHTML={createHtml(props.description)}
-            />
-        )}
+        {props.description &&
+            (props.headline === 'Blog' ? (
+                <Row>
+                    <Col>
+                        <Lottie animationData={blog} />
+                    </Col>
+                    <Col>
+                        <blockquote
+                            className="subtitle-b"
+                            dangerouslySetInnerHTML={createHtml(
+                                props.description
+                            )}
+                        />
+                    </Col>
+                </Row>
+            ) : (
+                <blockquote
+                    className="subtitle-b"
+                    dangerouslySetInnerHTML={createHtml(props.description)}
+                />
+            ))}
         <div className="line-mf"></div>
     </div>
 );

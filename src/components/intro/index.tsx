@@ -18,10 +18,6 @@ interface IntroProps {
 export const Intro: React.FC<IntroProps> = (props) => {
     return (
         <div id="home" className="intro bg-image">
-            {/* bg-image background */}
-            {/* <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" /> */}
             <ParticlesFC />
             <div className="intro-content display-table">
                 <div className="table-cell">

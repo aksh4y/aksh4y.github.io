@@ -2,8 +2,7 @@ import React from 'react';
 import { useCallback, useMemo } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import { ISourceOptions } from 'tsparticles-engine';
-import { Engine } from 'tsparticles-engine/types/engine';
+import { Engine, ISourceOptions } from 'tsparticles-engine';
 
 export const ParticlesFC = () => {
     const options: ISourceOptions = useMemo(() => {
