@@ -85,104 +85,106 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
                                 tag="tool"
                             />
                         </Col>
-                        <Col md={6}>
-                            <Technologies>
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-java shadow-java"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-java">
-                                        JAVA
-                                    </span>
-                                </div>
+                        {!!!isMobile && (
+                            <Col md={6}>
+                                <Technologies>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-java shadow-java"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-java">
+                                            JAVA
+                                        </span>
+                                    </div>
 
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-ts shadow-ts"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-ts">
-                                        TypeScript
-                                    </span>
-                                </div>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-ts shadow-ts"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-ts">
+                                            TypeScript
+                                        </span>
+                                    </div>
 
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-css shadow-css"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-css">
-                                        CSS
-                                    </span>
-                                </div>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-css shadow-css"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-css">
+                                            CSS
+                                        </span>
+                                    </div>
 
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-node shadow-node"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-node">
-                                        Node.js
-                                    </span>
-                                </div>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-node shadow-node"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-node">
+                                            Node.js
+                                        </span>
+                                    </div>
 
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-react shadow-react"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-react">
-                                        React.js
-                                    </span>
-                                </div>
-                                <div className="progressbar">
-                                    <svg className="progressbar__svg">
-                                        <circle
-                                            cx="70"
-                                            cy="70"
-                                            r="45"
-                                            className="progressbar__svg-circle circle-angular shadow-angular"
-                                        >
-                                            {' '}
-                                        </circle>
-                                    </svg>
-                                    <span className="progressbar__text shadow-angular">
-                                        Angular.js
-                                    </span>
-                                </div>
-                            </Technologies>
-                        </Col>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-react shadow-react"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-react">
+                                            React.js
+                                        </span>
+                                    </div>
+                                    <div className="progressbar">
+                                        <svg className="progressbar__svg">
+                                            <circle
+                                                cx="70"
+                                                cy="70"
+                                                r="45"
+                                                className="progressbar__svg-circle circle-angular shadow-angular"
+                                            >
+                                                {' '}
+                                            </circle>
+                                        </svg>
+                                        <span className="progressbar__text shadow-angular">
+                                            Angular.js
+                                        </span>
+                                    </div>
+                                </Technologies>
+                            </Col>
+                        )}
                     </Row>
                 </Col>
             </Row>
