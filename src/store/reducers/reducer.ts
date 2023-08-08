@@ -1,4 +1,5 @@
 import Portfolio from '../../types/portfolio';
+import news from './../../asset/images/news.jpg';
 
 // this year - first job date - years spent in school and gap since
 const yearsOfXp = new Date().getFullYear() - 2014 - 3;
@@ -264,7 +265,7 @@ export const initState: Portfolio = {
                     title: 'Autometa',
                     summary:
                         "Autometa is an app that triggers reminders and automates text-based events based on the user's location and radius. Users can snooze or delay events and also cancel them within a specified duration of the trigger.",
-                    image: 'https://akshaysadarangani.com/images/Projects/Autometa.png',
+                    image: 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/bbc53fa0bc9f51e164aa3cb2979134a962e69cce/src/asset/images/autometa.png',
                     links: [
                         {
                             label: 'Check It Out',
@@ -277,7 +278,7 @@ export const initState: Portfolio = {
                     title: 'Unichat',
                     summary:
                         "A MEAN stack web app which lets users chat with each other either or in a group either privately or publicly in their native language. With a choice of 15 languages to choose from, chatting especially with a multicultural crowd has never been easier. Messages are translated as per user's preferred language and have associated sentiment analysis alongside to give a better idea of the tone of the message as translations today aren't perfect.",
-                    image: 'https://akshaysadarangani.com/images/thumbs/10.jpg',
+                    image: 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/bbc53fa0bc9f51e164aa3cb2979134a962e69cce/src/asset/images/unichat.jpg',
                     links: [
                         {
                             label: 'Check It Out',
@@ -290,7 +291,7 @@ export const initState: Portfolio = {
                     title: 'News Map',
                     summary:
                         'A web app that aggregates different news sources using Python on a map built with deck-gl and D3.js to provide location-based trends in current events and a sentiment analysis on each article using IBM Watson NLU to categorize each source’s view and help users recognize bias and prevent misinformation',
-                    image: 'https://akshaysadarangani.com/images/Projects/news.jpg',
+                    image: 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/bbc53fa0bc9f51e164aa3cb2979134a962e69cce/src/asset/images/news.jpg',
                     links: [
                         {
                             label: 'Check It Out',

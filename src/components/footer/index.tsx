@@ -6,8 +6,9 @@ import { RootState } from '../../store/myTypes';
 import Portfolio from '../../types/portfolio';
 import Socials from './socials';
 import './style.scss';
+import footer from '../../asset/images/footer.jpg';
 
-const defaultFooterBg = 'https://akshaysadarangani.com/images/cover2.jpg';
+const defaultFooterBg = footer;
 export const Footer: React.FC<Portfolio> = (props) => {
     const footer = props.footer;
     const imagePath = footer.background
