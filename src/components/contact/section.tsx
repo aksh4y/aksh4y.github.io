@@ -9,13 +9,13 @@ export const ContactSection: React.FC = () => {
     return (
         <Container>
             <Row id="contact" className="text-center">
-                <Col>
+                <Col lg>
                     <Widget
                         id="ysaTlC"
                         style={{ width: '100%', height: '500px' }}
                     />
                 </Col>
-                <Col>
+                <Col lg>
                     <Lottie animationData={email} />
                 </Col>
             </Row>

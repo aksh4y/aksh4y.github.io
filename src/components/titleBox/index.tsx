@@ -55,10 +55,10 @@ export const TitleBox: React.FC<TitleBoxProps> = (props) => (
         {props.description &&
             (props.headline === 'Blog' ? (
                 <Row>
-                    <Col>
+                    <Col lg>
                         <Lottie animationData={blog} />
                     </Col>
-                    <Col>
+                    <Col lg>
                         <blockquote
                             className="subtitle-b"
                             dangerouslySetInnerHTML={createHtml(
