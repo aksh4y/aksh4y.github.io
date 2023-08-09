@@ -20,7 +20,7 @@ export default () => {
                     });
             }
         });
-    });
+    }, []);
 
     return (
         <div id="preloader">

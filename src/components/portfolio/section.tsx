@@ -57,7 +57,11 @@ export const ProjectSet: React.FC<Section> = (props) => {
                         );
                     })}
             </Row>
-            {props.id === 'contact' && <Contact />}
+            {props.id === 'contact' && (
+                <Row>
+                    <Contact />
+                </Row>
+            )}
             <ModalGateway>
                 {modalIsOpen ? (
                     <Modal onClose={toggleModal}>
