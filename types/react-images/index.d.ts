@@ -5,3 +5,5 @@ declare module 'react-images' {
     export class ModalGateway extends React.Component<any> {}
     export default class Carousel extends React.Component<any> {}
 }
+
+declare module '*.pdf';

@@ -11,6 +11,8 @@ import styled from '@emotion/styled';
 import Lottie from 'lottie-react';
 import engineer from './../../asset/engineer.json';
 import resumeGlimpse from './../../asset/resume_glimpse.json';
+import ResumePDF from './../../asset/Resume.pdf';
+
 export interface ResumeProps {
     toolsHeadline: string;
     tools: Tool[];
@@ -36,9 +38,7 @@ const ResumeBadge = (
             display: 'block',
             width: '200px',
         }}
-        onClick={() =>
-            window.open('https://akshaysadarangani.com/Resume.pdf', '_blank')
-        }
+        onClick={() => window.open(ResumePDF, '_blank')}
     >
         <span style={{ color: 'white' }}>Download My Resume</span>
     </Badge>

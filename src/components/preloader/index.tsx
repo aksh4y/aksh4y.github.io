@@ -24,7 +24,7 @@ export default () => {
 
     return (
         <div id="preloader">
-            <StyledLoader animationData={loader} />;
+            <StyledLoader animationData={loader} />
         </div>
     );
 };
