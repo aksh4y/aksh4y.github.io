@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Carousel, { Modal, ModalGateway } from 'react-images';
 import ProjectCard from './projectCard';
 import Project from '../../types/project';
 import Section from '../../types/section';
@@ -62,13 +61,6 @@ export const ProjectSet: React.FC<Section> = (props) => {
                     <Contact />
                 </Row>
             )}
-            <ModalGateway>
-                {modalIsOpen ? (
-                    <Modal onClose={toggleModal}>
-                        <Carousel views={images} currentIndex={selectedId} />
-                    </Modal>
-                ) : null}
-            </ModalGateway>
         </Container>
     );
 };
