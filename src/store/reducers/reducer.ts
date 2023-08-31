@@ -120,7 +120,7 @@ export const initState: Portfolio = {
                     title: 'MongoDB Ecosystem',
                     summary:
                         'Build the best stack, make the most impact. We integrate with your favorite tools so you can spend more time building.',
-                    image: 'https://assets.mongodb-cdn.com/mms/static/dist/images/e5f9c604b34c4b83eca2708fde2314b5.svg',
+                    image: 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/27a3b9d8302864ffb5d2e72a1c952b6e95b8b950/src/asset/images/ecosystem.svg',
                     links: [
                         {
                             label: 'Check It Out',
@@ -133,7 +133,7 @@ export const initState: Portfolio = {
                     title: 'MongoDB Atlas',
                     summary:
                         'MongoDB Atlas is a multi-cloud developer data platform. At its core is a fully managed cloud database for modern applications. Atlas is the best way to run MongoDB.',
-                    image: 'https://assets.website-files.com/6194c620b350c4056027fac7/62f4d43c3eac4d1d01e6e038_mongodb-atlas-logo.png',
+                    image: 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/27a3b9d8302864ffb5d2e72a1c952b6e95b8b950/src/asset/images/mongodb-atlas.png',
                     links: [
                         {
                             label: 'Check It Out',

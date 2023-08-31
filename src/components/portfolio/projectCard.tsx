@@ -8,7 +8,12 @@ export const ProjectCard: React.FC<Project> = (props) => {
 
     return (
         <Card className="shadow-sm no-border full-height">
-            <Card.Img variant="top" src={imagePath} alt={props.title} />
+            <Card.Img
+                variant="top"
+                src={imagePath}
+                alt={props.title}
+                loading="lazy"
+            />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.summary}</Card.Text>
