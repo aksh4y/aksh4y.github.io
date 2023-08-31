@@ -13,7 +13,7 @@ export interface DocumentProps {
 export const Document: React.FC<DocumentProps> = (props) => {
     const iconPath = props.icon
         ? '/img/' + props.icon
-        : 'https://raw.githubusercontent.com/aksh4y/Old-Static-Site/master/favicon.ico';
+        : 'https://raw.githubusercontent.com/aksh4y/aksh4y.github.io/master/src/favicon.ico';
 
     return (
         <React.Fragment>
