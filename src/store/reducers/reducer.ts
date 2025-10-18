@@ -6,8 +6,8 @@ const yearsOfXp = new Date().getFullYear() - 2014 - 3;
 
 export const initState: Portfolio = {
     meta: {
-        title: 'Akshay Sadarangani - Software Engineer',
-        description: `Hey there! I'm a software engineer with a passion for crafting top-notch code. With ${yearsOfXp}+ years of experience and an MS in Computer Science under my belt, I've tackled some pretty challenging projects and delivered results that have not only resulted in measurable improvement but have also directly led to millions of dollars in cost savings.`,
+        title: 'Akshay Sadarangani - Senior Software Engineer',
+        description: `Hey there! I'm a senior software engineer currently working on the infra side of growth engineering with a passion for crafting top-notch code. With ${yearsOfXp}+ years of experience and an MS in Computer Science under my belt, I've tackled some pretty challenging projects and delivered results that have not only resulted in measurable improvement but have also directly led to millions of dollars in cost savings.`,
         showRepoLink: true,
     },
     menu: {
@@ -30,26 +30,25 @@ export const initState: Portfolio = {
         ],
     },
     resume: {
-        headline: `Hey there! I'm a software engineer with a passion for crafting top-notch code. With ${yearsOfXp}+ years of experience and an MS in Computer Science under my belt, I've tackled some pretty challenging projects and delivered results that have not only resulted in measurable improvement but have also directly led to millions of dollars in cost savings.`,
+        headline: `Hey there! I'm a senior software engineer currently working on the infra side of growth engineering with a passion for crafting top-notch code. With ${yearsOfXp}+ years of experience and an MS in Computer Science under my belt, I've tackled some pretty challenging projects and delivered results that have not only resulted in measurable improvement but have also directly led to millions of dollars in cost savings.`,
         summary: [
             'My skills in full-stack development and experience in Cloud, Database and Fintech allow me to come up with creative solutions that solve real-world problems.',
             "I'm always looking for new and innovative ways to improve my skillset, and I love staying up-to-date with the latest technologies.",
         ],
         jobsHeadline: 'Employment',
         jobs: [
-            // {
-            //     title: 'Senior Software Engineer',
-            //     company: 'MongoDB',
-            //     timeframe: 'Current',
-            //     current: true,
-            //     summary:
-            //         'Created a NoAuth marketplace app for MongoDB integrations from scratch in React with TypeScript and Java hosting 20+ configurable, filterable and searchable integrations at launch increasing discoverability by 100%. Added a new connectivity option to the MongoDB Atlas integration for Vercel to support data transfer over HTTPS using RESTful Data API to add to the value proposition of DBaaS',
-            // },
             {
-                title: 'Software Engineer III',
+                title: 'Senior Software Engineer',
                 company: 'MongoDB',
                 timeframe: 'Current',
                 current: true,
+                summary:
+                    `<li>Led engineering for the first-of-its-kind MongoDB Atlas Azure Native Integration, enabling Azure users to provision and manage Atlas clusters directly from the Azure portal with seamless onboarding, automated billing, and background account creation using Java and React with TypeScript.</li><li>Acted as secondary in supporting the development of MongoDB Atlas as a Vercel Native integration, providing architectural guidance and leveraging learnings from leading the MongoDB Atlas as an Azure Native Integration project.</li><li>Spearheaded the design and rollout of a centralized configuration service with REST and gRPC interfaces, unifying system settings and supporting feature flags for Java and Go-based services.</li><li>Transformed the Ecosystem integration catalog into a CMS-driven platform, empowering non-engineering teams to manage integrations with validations and approval workflows, significantly reducing engineering overhead.</li>`,
+            },
+            {
+                title: 'Software Engineer III',
+                company: 'MongoDB',
+                timeframe: '2021 - 2024',
                 summary:
                     '<li>Created a NoAuth integrations marketplace app for MongoDB from scratch in React with TypeScript and Java hosting 20+ configurable, filterable and searchable integrations at launch increasing discoverability by 100%</li><li>Pioneered the development of a feature-rich NoAuth marketplace application for MongoDB integrations, utilizing React, TypeScript, and Java from the ground up. Hosting over 20 configurable, filterable, and searchable integrations, this visionary creation witnessed an awe-inspiring 100% increase in discoverability upon launch, revolutionizing the way users interacted with the platform</li><li>Forged a powerful collaboration with the Charts product and analytics teams to orchestrate a high-stakes A/B test experiment. The result? A real-time, interactive, and captivating Atlas Chart component that played a pivotal role in driving product awareness to unprecedented heights, boasting an extraordinary 138% increase in activation</li><li>Worked closely with product, marketing, and analytics to engineer and launch multiple complex A/A, A/B and MAB test experiments in React/Java to make improvements to the Atlas funnel and integrate Atlas front-end with back-end analytics systems</li><li>Elevate the core Atlas product by building new features and improving existing processes and driving them through the SDLC to completion, precisely and accurately, by making data-driven decisions</li>',
             },
