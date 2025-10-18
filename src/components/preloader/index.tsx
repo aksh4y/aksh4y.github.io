@@ -11,7 +11,7 @@ const StyledLoader = styled(Lottie)`
 
 export default () => {
     useEffect(() => {
-        $(window).on('load', function () {
+        function hidePreloader() {
             if ($('#preloader').length) {
                 $('#preloader')
                     .delay(1000)
@@ -19,7 +19,18 @@ export default () => {
                         $(this).remove();
                     });
             }
-        });
+        }
+
+        if (document.readyState === 'complete') {
+            hidePreloader();
+        } else {
+            window.addEventListener('load', hidePreloader);
+        }
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('load', hidePreloader);
+        };
     }, []);
 
     return (
