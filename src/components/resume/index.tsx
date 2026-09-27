@@ -26,24 +26,6 @@ const Technologies = styled.div`
     flex-wrap: wrap;
 `;
 
-const ResumeBadge = (
-    <Badge
-        pill
-        bg="#dccd14"
-        style={{
-            background: '#dccd14',
-            margin: '15px auto',
-            padding: '10px',
-            cursor: 'pointer',
-            display: 'block',
-            width: '200px',
-        }}
-        onClick={handleResumeClick} 
-    >
-        <span style={{ color: 'white' }}>Download My Resume</span>
-    </Badge>
-);
-
 export const Resume: React.FC<ResumeProps> = (props: any) => {
     const [width, setWidth] = useState<number>(window.innerWidth);
     const handleWindowSizeChange = () => {
@@ -66,6 +48,24 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
             window.open(ResumePDF, '_blank')
         }
     };
+
+    const ResumeBadge = (
+        <Badge
+            pill
+            bg="#dccd14"
+            style={{
+                background: '#dccd14',
+                margin: '15px auto',
+                padding: '10px',
+                cursor: 'pointer',
+                display: 'block',
+                width: '200px',
+            }}
+            onClick={handleResumeClick} 
+        >
+            <span style={{ color: 'white' }}>Download My Resume</span>
+        </Badge>
+    );
 
     return (
         <Container className="section-wrapper">
