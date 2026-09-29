@@ -39,16 +39,6 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
     }, []);
     const isMobile = width <= 768;
 
-    const RESUME_UNLOCK_DATE = new Date('2026-09-30T11:00:00-04:00'); 
-    const handleResumeClick = (e: React.MouseEvent) => { 
-        if (new Date() < RESUME_UNLOCK_DATE) { 
-            e.preventDefault(); 
-            alert('Sorry, my resume is currently locked until 9/30'); 
-        } else {
-            window.open(ResumePDF, '_blank')
-        }
-    };
-
     const ResumeBadge = (
         <Badge
             pill
@@ -61,7 +51,7 @@ export const Resume: React.FC<ResumeProps> = (props: any) => {
                 display: 'block',
                 width: '200px',
             }}
-            onClick={handleResumeClick} 
+            onClick={() => window.open(ResumePDF, '_blank')} 
         >
             <span style={{ color: 'white' }}>Download My Resume</span>
         </Badge>
